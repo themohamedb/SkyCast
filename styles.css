@@ -14,12 +14,12 @@ body {
 
 .weather-app {
     width: 100%;
-    max-width: 450px;
+    max-width: 450px; /* Set a consistent max width */
     margin: 0 auto;
     padding: 30px 15px;
     background-color: #ffffff;
-    border-radius: 30px; /* Increased radius for smoother edges */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better contrast */
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -41,14 +41,14 @@ body {
     flex-wrap: nowrap;
     width: 100%;
     max-width: 450px;
-    border-radius: 50px; /* More rounded group for both input and button */
-    overflow: hidden; /* Ensures rounded corners stay intact */
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 #city-input {
     flex-grow: 1;
     padding: 15px;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Make the font size slightly bigger */
     border: none;
     outline: none;
     background-color: #f9f9f9;
@@ -59,7 +59,7 @@ body {
     background-color: #ff6b6b;
     color: #ffffff;
     border: none;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Slightly larger font */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -69,7 +69,7 @@ body {
 }
 
 .weather-result {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: #333333;
 }
@@ -81,37 +81,36 @@ body {
 }
 
 .weather-result img {
-    width: 80px;
+    width: 100px;
     margin: 15px 0;
 }
-
-/* Responsive Styles */
 
 /* Mobile Styles */
 @media (max-width: 599px) {
     .weather-app {
         padding: 20px;
-        border-radius: 20px; /* Adjust radius for smaller screens */
+        max-width: 90%; /* Ensures it fits better on mobile */
+        border-radius: 20px;
     }
 
     .weather-app h1 {
-        font-size: 2rem;
-    }
-
-    .input-group {
-        flex-direction: column;
-        border-radius: 10px;
+        font-size: 2.2rem; /* Adjusted size for consistency */
     }
 
     #city-input {
-        border-radius: 10px;
-        margin-bottom: 10px;
-        width: 100%;
+        padding: 15px;
+        font-size: 1.2rem; /* Same font size as desktop */
     }
 
     #weather-form button {
-        width: 100%;
-        border-radius: 10px;
+        padding: 15px;
+        font-size: 1.2rem; /* Same size as desktop button */
+        width: auto; /* Keep it inline */
+    }
+
+    .input-group {
+        flex-direction: row; /* Maintain row layout even on mobile */
+        border-radius: 50px; /* Keep the same border-radius */
     }
 
     .weather-result h2 {
@@ -119,7 +118,7 @@ body {
     }
 
     .weather-result img {
-        width: 70px;
+        width: 80px;
     }
 }
 
@@ -127,7 +126,7 @@ body {
 @media (min-width: 600px) and (max-width: 899px) {
     .weather-app {
         max-width: 90%;
-        border-radius: 25px; /* Increased smoothness on larger mobile and tablet views */
+        border-radius: 25px;
     }
 
     .weather-app h1 {
@@ -160,11 +159,12 @@ body {
     }
 
     #city-input {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        padding: 15px;
     }
 
     #weather-form button {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .weather-result h2 {
