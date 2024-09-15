@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sky Cast</title>
+    <title>SkyCast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- For responsiveness on mobile devices -->
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="weather-app">
-        <h1>Weather App</h1>
-        <div class="search-box">
-            <input type="text" id="cityInput" placeholder="Enter city name">
-            <button id="searchButton">Search</button>
-        </div>
-        <div id="weatherDisplay" class="weather-display">
-            <!-- Weather information will be displayed here -->
+        <h1>SkyCast</h1> <!-- Centered title -->
+        <form id="weather-form">
+            <div class="input-group">
+                <input type="text" id="city-input" placeholder="Enter city name" required>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <div id="weather-result" class="weather-result">
+            <!-- Weather information will appear here -->
         </div>
     </div>
-
+    <!-- Removed footer -->
     <script src="app.js"></script>
 </body>
 </html>
