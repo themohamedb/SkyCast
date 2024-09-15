@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0 30px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #0a0a23; /* Dark midnight blue background */
+    background-color: #2C2F33; /* Dark grayish-blue background color */
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -53,6 +53,7 @@ body {
     border: none;
     outline: none;
     background-color: #f9f9f9;
+    min-width: 0;
 }
 
 #weather-form button {
@@ -64,8 +65,8 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     flex-shrink: 0;
-    white-space: nowrap; /* Prevent button text from breaking */
-    border-radius: 0 50px 50px 0; /* Fix button's rounded edge */
+    white-space: nowrap;
+    border-radius: 0 50px 50px 0;
 }
 
 #weather-form button:hover {
@@ -113,8 +114,9 @@ body {
     #weather-form button {
         padding: 15px 30px;
         font-size: 1.2rem;
-        width: auto; /* Keep the button width auto so it adjusts properly */
-        white-space: nowrap; /* Prevents the button text from wrapping */
+        width: auto;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
 
     .input-group {
