@@ -2,22 +2,21 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 30px; /* Increase padding around the body to add space on the sides */
     font-family: 'Montserrat', sans-serif;
     background-color: #f7f7f7;
     color: #333333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 20px; /* Add padding to the body for breathing room on small screens */
+    min-height: 100vh; /* Ensure the app stays centered even on larger screens */
 }
 
 .weather-app {
     width: 100%;
-    max-width: 450px; 
+    max-width: 500px; /* Slightly increase the max-width for larger devices */
     margin: 0 auto;
-    padding: 30px 20px; /* Add more padding inside the app */
+    padding: 40px 30px; /* Add more padding inside the app container */
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -28,20 +27,20 @@ body {
     font-size: 2.5rem;
     font-weight: 600;
     color: #ff6b6b;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Add more space between the title and form */
 }
 
 #weather-form {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Increase margin for more space below the form */
 }
 
 .input-group {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -56,7 +55,7 @@ body {
 }
 
 #weather-form button {
-    padding: 15px 30px;
+    padding: 15px 40px; /* Add more padding to make the button larger */
     background-color: #ff6b6b;
     color: #ffffff;
     border: none;
@@ -72,15 +71,16 @@ body {
 
 .weather-result {
     font-size: 1.2rem;
-    line-height: 1.6;
+    line-height: 1.8; /* Increase line height for more readable text */
     color: #333333;
-    padding: 10px 0; /* Add padding to space the results from the sides */
+    padding: 20px 0; /* Add vertical padding for better spacing */
 }
 
 .weather-result h2 {
     font-size: 2rem;
     font-weight: 600;
     color: #ff6b6b;
+    margin-bottom: 20px; /* Add margin below the result title */
 }
 
 .weather-result img {
@@ -91,9 +91,9 @@ body {
 /* Mobile Styles */
 @media (max-width: 599px) {
     .weather-app {
-        padding: 20px; /* Add padding inside the app on mobile */
+        padding: 30px; /* Increase padding on mobile for more breathing room */
         max-width: 90%;
-        border-radius: 20px;
+        border-radius: 25px;
     }
 
     .weather-app h1 {
@@ -106,7 +106,7 @@ body {
     }
 
     #weather-form button {
-        padding: 15px 30px;
+        padding: 15px 40px;
         font-size: 1.2rem;
         width: auto;
     }
@@ -168,7 +168,7 @@ body {
 
     #weather-form button {
         font-size: 1.2rem;
-        padding: 15px 30px;
+        padding: 15px 40px;
     }
 
     .weather-result h2 {
